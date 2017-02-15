@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400sp"
+    android:layout_height="300sp"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    >
+    <RelativeLayout
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" android:background="@color/colorAccent"
+>
+
+        <ImageView
+            android:id="@+id/imageConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/animal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+ >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chủ đề đã bị khóa. Xem quảng cáo để mở khóa."
+            android:textColor="#f50000"
+            android:padding="20dp"
+            android:id="@+id/txtLock"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/btn_start"/>
+        <ImageButton
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/start"
+            android:background="@null"/>
+    </RelativeLayout>
+
+</LinearLayout>
